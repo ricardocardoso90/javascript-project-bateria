@@ -11,8 +11,8 @@ function composerButton() {
   if (song !== "") {
     const songArray = song.split("");
     playComposition(songArray);
-  };
-};
+  }
+}
 
 //FUNÇÃO PARA EXECUTAR O SOM AO CLIQUE.
 function playSound(sound) {
@@ -23,7 +23,7 @@ function playSound(sound) {
   if (audioElement) {
     audioElement.currentTime = 0;
     audioElement.play();
-  };
+  }
 
   //PARTE DO CSS QUE MARCA AS TECLAS AO CLIQUE.
   if (keyElement) {
@@ -31,8 +31,8 @@ function playSound(sound) {
     setTimeout(() => {
       keyElement.classList.remove("active");
     }, 300);
-  };
-};
+  }
+}
 
 //FUNÇÃO PARA TOCAR O SOM NO CAMPO DE INPUT.
 function playComposition(songArray) {
@@ -43,5 +43,5 @@ function playComposition(songArray) {
     }, wait);
 
     wait += 250;
-  };
-};
+  }
+}
