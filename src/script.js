@@ -1,6 +1,6 @@
 const body = document.body;
 
-//EVENTO DE CLIQUE PARA EXECULTAR OS SONS DA BATERIA.
+//EVENTO PARA EXECUTAR OS SONS DA BATERIA.
 body.addEventListener("keyup", (event) => {
   playSound(event.code.toLowerCase());
 });
@@ -12,7 +12,7 @@ function composerButton() {
     const songArray = song.split("");
     playComposition(songArray);
   }
-}
+};
 
 //FUNÇÃO PARA EXECUTAR O SOM AO CLIQUE.
 function playSound(sound) {
@@ -23,7 +23,7 @@ function playSound(sound) {
   if (audioElement) {
     audioElement.currentTime = 0;
     audioElement.play();
-  }
+  };
 
   //PARTE DO CSS QUE MARCA AS TECLAS AO CLIQUE.
   if (keyElement) {
